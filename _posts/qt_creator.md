@@ -9,12 +9,12 @@ image:
   width: 300
 
 ---
-#Running LittlevGL PC Simulator from QT-Creator in Windows
+## Running LittlevGL PC Simulator from QT-Creator in Windows
 Qt-Creator is a powerful tool and is easy manage non Qt project too.
 With the latest release Qt 5.12.0, GCC x64 compiler for windows is supported.
 This is a step by step tutorial to run littlevgl PC simulator, in Windows 10, from Qt-Creator 4.8.0 with Mingw 64 bit compiler.
 
-##Requirements
+### Requirements
 * Qt-Creator and Mingw-64bit environment. Refer to https://www.qt.io/ to install the open source version of QT environment.
 * SDL2 developement libraries for mingw: https://www.libsdl.org/download-2.0.php
 * LittlevGL PC Simulator: https://littlevgl.com/pc-simulator

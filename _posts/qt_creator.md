@@ -24,16 +24,19 @@ https://www.libsdl.org/download-2.0.php
 in pc_simulator folder create a subfolder named SDL2, copy sdl header files there.
 create SDL2/lib subfolder and copy libraries for i686-w64 from SDL2 package.
 
-file->new file or project.
-non-qt-project -> plain C application. press 'choose'
+* Open QT-Creator
+* from 'file' menu select 'new file or project'.
+  * in the form select 'non-qt-project' and 'plain C application'. Press 'choose' button.
 
-in the project management form:
-location: select project directory location and type a project name (ex. : pc_sim). 'next'
-build system: qmake. 'next'
-kits: select "Mingw 64-bit" 'next'
-summary: 'finish'.
+
+* in the project management form:
+  * location: select project directory location and type a project name (ex. : pc_sim). press 'next' button.
+  * build system: select qmake. press 'next' button.
+  * kits: select "Mingw 64-bit". press 'next' button.
+  * summary: press 'finish' button.
 ![QT-Creator project set up](/assets/qt_creator/new_project.PNG)
-close project from QT-Creator.
+
+* close project from QT-Creator.
 
 new subfolder is created with pc_sim.pro, pc_sim.pro.user and main.c template.
 move pc_sim.pro, pc_sim.pro.user to main directory. remove "pc_sim" subfolder.

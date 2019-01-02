@@ -53,6 +53,6 @@ DEPENDPATH += $$PWD/SDL2
 
 select 'release' build from left panel icon.
 
-Running demo:
-![QT-Creator running LittlevGL demo in PC simulator] (/assets/qt_creator/QT_littlevgl.png)
+Running demo
+![QT-Creator running LittlevGL demo in PC simulator](/assets/qt_creator/QT_littlevgl.png)
 

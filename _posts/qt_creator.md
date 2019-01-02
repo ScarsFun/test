@@ -2,9 +2,9 @@
 layout: post
 title: "Run LittlevGL PC Simulator from QT-Creator in Windows"
 author: "pusillus"
-cover: /assets/qt_creator/QT_littlevgl.png
+cover: /assets/qt_creator/QT_littlevgl.PNG
 image:
-  path: /assets/qt_creator/QT_littlevgl.png
+  path: /assets/qt_creator/QT_littlevgl.PNG
   height: 717
   width: 1324
 ---
@@ -54,5 +54,5 @@ DEPENDPATH += $$PWD/SDL2
 select 'release' build from left panel icon.
 
 Running demo
-![QT-Creator running LittlevGL demo in PC simulator](/assets/qt_creator/QT_littlevgl.png)
+![QT-Creator running LittlevGL demo in PC simulator](/assets/qt_creator/QT_littlevgl.PNG)
 

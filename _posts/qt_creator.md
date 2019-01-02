@@ -76,11 +76,13 @@ A new subfolder is created with pc_sim.pro, pc_sim.pro.user and main.c template.
   SOURCES += \
         main.c
   ```
+
 ![QT-Creator remove template source](/assets/qt_creator/remove_souces.PNG)
 * save project
 
 * in 'projects' pane: right click on pc_sim project and select "Add Existing Directory" from menu. All sources files and includes should be already selected by default.
   * from file list: deselect folder "lv_examples" and "SDL2". Then add only .c and .h files from folder "lv_examples/demo".
+
  ![QT-Creator remove template source](/assets/qt_creator/file_select.PNG)
 * edit pc_sim.pro and add this lines to add SDL2 library and includes to the project:
   ```
@@ -89,9 +91,11 @@ A new subfolder is created with pc_sim.pro, pc_sim.pro.user and main.c template.
   INCLUDEPATH += $$PWD/SDL2
   DEPENDPATH += $$PWD/SDL2
   ```
+  
 ![QT-Creator add libraries path](/assets/qt_creator/add_SDL_path.PNG)
 * Save project.
 * select 'release' build from left panel icon.
+
 ![QT-Creator manage kit](/assets/qt_creator/release.png)
 * Run demo
 ![QT-Creator running LittlevGL demo in PC simulator](/assets/qt_creator/QT_littlevgl.PNG)

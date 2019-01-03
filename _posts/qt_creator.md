@@ -19,9 +19,12 @@ This is a step by step tutorial to run littlevgl PC simulator, in Windows 10, fr
 * SDL2 developement libraries for mingw: https://www.libsdl.org/download-2.0.php
 * LittlevGL PC Simulator: https://littlevgl.com/pc-simulator
 
-in *pc_simulator* folder create a subfolder named *SDL2*, copy sdl header files there.
-create *SDL2/lib* subfolder and copy libraries for i686-w64 from SDL2 package.
+### Copy SDL2 libraries
+In *pc_simulator* folder create a subfolder named *SDL2*. 
+Copy sdl header files there.
+Create *SDL2/lib* subfolder and copy libraries for i686-w64 from SDL2 package.
 
+### Settin up Qt-Creator project
 * Open Qt-Creator
 * from **file** menu select **new file or project**.
   * in the form select **non-Qt-project** and **plain C application**. Press **choose** button.
@@ -73,8 +76,8 @@ All sources files and includes should be already selected by default.
 ![Qt-Creator manage kit](/assets/qt_creator/release.png)
 * Run demo
 
-![Qt-Creator running LittlevGL demo in PC simulator](/assetsqQt_creator/QT_littlevgl.PNG)
+![Qt-Creator running LittlevGL demo in PC simulator](/assets/qt_creator/QT_littlevgl.PNG)
 
 Qt-Creator is available also for Linux and MACOS. Adapting LittlevGL PC Simulator project on these OS should be simple.
-The complete project is available at this Github link: 
+The complete project is available at this Github link: https://github.com/ScarsFun/pc_simulator 
 

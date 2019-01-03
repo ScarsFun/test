@@ -11,7 +11,7 @@ image:
 ---
 ## Running LittlevGL PC Simulator from Qt-Creator in Windows
 Qt-Creator is a powerful IDE and is easy manage non Qt project too.
-With the latest release Qt 5.12.0, GCC x64 compiler for windows is supported.
+With the latest release Qt 5.12.0, GCC x64 compiler, for windows, is supported.
 This is a step by step tutorial to run littlevgl PC simulator, in Windows 10, from Qt-Creator 4.8.0 with Mingw 64 bit compiler.
 
 ### Requirements
@@ -19,8 +19,8 @@ This is a step by step tutorial to run littlevgl PC simulator, in Windows 10, fr
 * SDL2 developement libraries for mingw: https://www.libsdl.org/download-2.0.php
 * LittlevGL PC Simulator: https://littlevgl.com/pc-simulator
 
-in pc_simulator folder create a subfolder named SDL2, copy sdl header files there.
-create SDL2/lib subfolder and copy libraries for i686-w64 from SDL2 package.
+in *pc_simulator* folder create a subfolder named *SDL2*, copy sdl header files there.
+create *SDL2/lib* subfolder and copy libraries for i686-w64 from SDL2 package.
 
 * Open Qt-Creator
 * from **file** menu select **new file or project**.
@@ -51,11 +51,13 @@ A new subfolder is created with *pc_sim.pro, pc_sim.pro.user* and *main.c* templ
 * save project
 
 * in **projects** pane: right click on pc_sim project and select **Add Existing Directory** from menu.
-  ![Qt-Creator add directory](/assets/qt_creator/Add_Dir.png)
-  All sources files and includes should be already selected by default.
-  * from file list: deselect folder *lv_examples* and *SDL2*. Then add only .c and .h files from folder *lv_examples/demo*.
 
- ![Qt-Creator remove template source](/assets/qt_creator/file_select.PNG)
+![Qt-Creator add directory](/assets/qt_creator/Add_Dir.png)
+  
+All sources files and includes should be already selected by default.
+* from file list: deselect folder *lv_examples* and *SDL2*. Then add only .c and .h files from folder *lv_examples/demo*.
+
+![Qt-Creator remove template source](/assets/qt_creator/file_select.PNG)
 * edit *pc_sim.pro* and add this lines to add SDL2 library and includes to the project:
   ```
   LIBS += -L$$PWD/SDL2/lib/ -lmingw32 -lSDL2main -lSDL2
@@ -74,4 +76,5 @@ A new subfolder is created with *pc_sim.pro, pc_sim.pro.user* and *main.c* templ
 ![Qt-Creator running LittlevGL demo in PC simulator](/assetsqQt_creator/QT_littlevgl.PNG)
 
 Qt-Creator is available also for Linux and MACOS. Adapting LittlevGL PC Simulator project on these OS should be simple.
+The complete project is available at this Github link: 
 
